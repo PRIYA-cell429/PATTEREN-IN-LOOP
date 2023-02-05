@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>table</title>
+</head>
+<body bgcolor="gold">
+<center>
+<caption><font color="purple"size="+5" ><b><u>PATTERN</u></b></font><caption>
+<table border="12" bordercolor="green"cellspacing="5"cellpadding="5">
+
+<tr>
+<th bgcolor="blue"><font color="cyan"size="5" >
+<script>
+ var i,j;
+ for(i=1; i <= 10; i++)
+ {
+  for(j=1; j<=i; j++)
+ {
+   document.write('*');
+  }
+   document.write('<br />');
+  }    
+</script>
+</th>
+<th bgcolor="aqua"><font color="indigo"size="5" >
+<script>
+  var i, j;
+  for(i=10;i>=1;i--)
+   {
+ 
+    for(j=1;j<=i;j++)
+   {
+     document.write('$');
+    }
+     document.write('<br/>');
+   } 
+</script></th>
+<th bgcolor="gray"><font color="white"="5" >
+<script>
+
+ for(i=1; i <12; i++)
+ {
+  for(j=1; j<=i; j++)
+ {
+   document.write(j);
+   if(j == i)
+   continue;
+   else
+   document.write(' ');
+  }
+   document.write('<br />');
+  }
+</script></th>
+<th bgcolor="indigo" ><font color="yellow"size="5" >
+  <script>
+    let n = 10; 
+    let string = "";
+    
+    for (let i = 1; i <= n; i++) {
+      
+      for (let j = n; j > i; j--) {
+        string += " ";
+      }
+     
+      for (let k = 0; k < i * 2 - 1; k++) {
+        string += "$";
+      }
+      string += "<br>";
+    }
+    document.write(`<pre>${string}</pre>`);
+
+</script></th>
+<th  bgcolor="coral"><font color="black"size="5" >
+<script>
+var alpha = "a";
+for(var i=0; i<10; i++)
+{
+	for (var j=0; j<=i; j++)
+	{
+	
+	document.write(alpha);
+	}
+	document.write("<br>");	
+}
+</script></th>
+
+
+
+</table>
+</body>
+</html>
